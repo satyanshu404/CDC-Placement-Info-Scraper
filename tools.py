@@ -52,12 +52,10 @@ class Locator:
         return (By.NAME, element_text)
     
     def by_text(self, element_text: str) -> tuple:
-        return (By.XPATH, f'//*[contains(text(), {element_text})]')
+       return (By.XPATH, f"//*[contains(text(), '{element_text}')]")
     
     def by_element(self, element:str, text:str) -> tuple:
         return (By.XPATH, f'//*[@{element}={text}]')
     
     def by_css(self, element_text: str) -> tuple:
         return (By.CSS_SELECTOR, element_text)
-    
-    
