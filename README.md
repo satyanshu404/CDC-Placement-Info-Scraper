@@ -15,7 +15,15 @@
 This project provides a simple web scraper for extracting placement information from the CDC website. It uses `BeautifulSoup` and `requests` for parsing web content, and `selenium` for dynamic page interaction.
 
 **Disclaimer:**  
-This project is intended for educational and research purposes only. Please refrain from using it to violate any website’s terms of service or engage in unauthorized activities.
+This project is intended for educational purposes and to get the idea about how the placement season works.
+It is not intended for any malicious or unethical use. The scraper is designed to be used responsibly and ethically, respecting the terms of service of the target website. 
+
+Always ensure you have permission to scrape a website before doing so, and be mindful of the load you place on their servers. This project is provided "as-is" without any warranty or guarantee of functionality. Use it at your own risk, and always follow best practices for web scraping.
+
+
+This project is not affiliated with or endorsed by the CDC or any other organization. The information provided in this project is for educational purposes only and should not be considered as professional advice. 
+
+The authors of this project are not responsible for any consequences arising from the use of this project.
 
 ---
 
