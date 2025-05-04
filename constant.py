@@ -49,14 +49,15 @@ class CDCElements:
 
 @dataclass
 class JNFTableElements:
-    SCROLL_COUNT:int = 350
-    SLEEP_DURATION:int = 2
+    SCROLL_COUNT:int = 500
+    SLEEP_DURATION:int = 2.0
     TABLE_ID:str = 'grid37'
     ID_CELL: str = 'grid37_rn'
     COMPANY_CELL: str = 'grid37_companyname'
     DESIGNATION_CELL: str = 'grid37_designation'
     CTC_CELL: str = 'grid37_ctc'
     JNF_ID_CELL: str = 'grid37_jnf_id'
+    TOTAL_ENTRIES_ID:str = 'pager37_right'
     
 
 @dataclass
