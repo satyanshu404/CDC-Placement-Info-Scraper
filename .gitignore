@@ -6,9 +6,10 @@ __pycache__/
 #custom
 *.ipynb
 .env
-data.json
+placement_data.json
 *.xlsx
 *.csv
+*.excel
 
 # C extensions
 *.so
