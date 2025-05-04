@@ -72,11 +72,11 @@ class CDCJNFElements:
 
 @dataclass
 class ParserConstants:
-    JSON_SAVE_PATH:str = 'data.json'
+    JSON_SAVE_PATH:str = 'placement_data.json'
 
 
 @dataclass
 class ConverterConstants:
     JSON_INPUT_PATH:str = ParserConstants.JSON_SAVE_PATH
-    EXCEL_SAVE_PATH:str = 'output.xlsx'
+    EXCEL_SAVE_PATH:str = 'placement_data.xlsx'
     
