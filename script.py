@@ -125,8 +125,16 @@ class Parser:
         i = 0
         seen_ids = set()
         scroll = self.driver.find_element(By.ID, JNFTableElements.TABLE_ID)
+        total_enties = self.driver.find_element(By.ID, JNFTableElements.TOTAL_ENTRIES_ID).text.strip()
+        total_entries = int(total_enties.split(" ")[-1])
 
-        while i < JNFTableElements.SCROLL_COUNT:
+        logging.info(f"Total entries: {total_entries}")
+
+        if MIN_CELL_ID == total_entries:
+            logging.info("All entries have been scrapped...")
+            return None
+
+        while i < JNFTableElements.SCROLL_COUNT and len(seen_ids) < total_entries:
             # Scroll down to load more entries
             scroll.send_keys(Keys.PAGE_DOWN)
             sleep(JNFTableElements.SLEEP_DURATION)
@@ -181,6 +189,9 @@ class Parser:
                     continue
 
             i += 1  # Move to next scroll iteration
+            sleep(JNFTableElements.SLEEP_DURATION)
+            logging.info(f"Scrapped {len(seen_ids)} rows...")
+        return None
     
 class Scraper:
     def __init__(self) -> None:
