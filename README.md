@@ -12,13 +12,15 @@
 
 ## Overview
 
-This project provides a simple web scraper for extracting placement information from the CDC website. It uses `BeautifulSoup` and `requests` for parsing web content, and `selenium` for dynamic page interaction.
+This project provides a simple web scraper for extracting general placement information from the CDC website. It uses `BeautifulSoup` for parsing web content, and `selenium` for dynamic page interaction.
+
+This project aims to assist IIT Kharagpur students in understanding placement trends from previous years. It automates the extraction of company names, job roles, and other relevant details from the CDC portal using a web scraper.
 
 ## Disclaimer 
-This project is intended for educational purposes and to get the idea about how the placement season works.
+This project is intended for educational purposes.
 It is not intended for any malicious or unethical use. The scraper is designed to be used responsibly and ethically, respecting the terms of service of the target website. 
 
-Always ensure you have permission to scrape a website before doing so, and be mindful of the load you place on their servers. This project is provided "as-is" without any warranty or guarantee of functionality. Use it at your own risk, and always follow best practices for web scraping.
+Ensure that you have permission to scrape CDC's website and that you are not violating any laws or regulations. This project is provided "as-is" without any warranty or guarantee of functionality. Use it at your own risk, and always follow best practices for web scraping.
 
 
 This project is not affiliated with or endorsed by the CDC or any other organization. The information provided in this project is for educational purposes only and should not be considered as professional advice. 
@@ -52,7 +54,6 @@ pip install -r requirements.txt
 This will install the required libraries: 
 - `selenium`
 - `beautifulsoup4`
-- `requests`
 
 You also need to install the Chrome WebDriver. You can download it from the official website: [Chrome WebDriver](https://sites.google.com/chromium.org/driver/downloads). Make sure to download the version that matches your Chrome browser version.
 
