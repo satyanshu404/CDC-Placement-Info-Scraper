@@ -5,7 +5,7 @@ __pycache__/
 
 #custom
 *.ipynb
-.env
+# .env
 placement_data.json
 *.xlsx
 *.csv
